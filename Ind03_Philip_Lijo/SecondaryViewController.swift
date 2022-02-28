@@ -11,15 +11,18 @@ class SecondaryViewController: UIViewController {
 
     @IBOutlet weak var stateImageView: UIImageView!
     @IBOutlet weak var stateNameLabel: UILabel!
+    @IBOutlet weak var stateAreaLabel: UILabel!
     
     var stateImage = UIImage()
     var stateName = ""
+    var stateArea = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         stateImageView.image = stateImage
         stateNameLabel.text = stateName
+        stateAreaLabel.text = stateArea
         
 
         // Do any additional setup after loading the view.
