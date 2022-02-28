@@ -9,10 +9,13 @@ import UIKit
 
 class SecondaryViewController: UIViewController {
 
+    
+    @IBOutlet weak var flagImageView: UIImageView!
     @IBOutlet weak var stateImageView: UIImageView!
     @IBOutlet weak var stateNameLabel: UILabel!
     @IBOutlet weak var stateAreaLabel: UILabel!
     
+    var flagImage = UIImage()
     var stateImage = UIImage()
     var stateName = ""
     var stateArea = ""
@@ -20,6 +23,7 @@ class SecondaryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        flagImageView.image = flagImage
         stateImageView.image = stateImage
         stateNameLabel.text = stateName
         stateAreaLabel.text = stateArea
