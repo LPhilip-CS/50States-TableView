@@ -9,12 +9,13 @@ import UIKit
 
 class SecondaryViewController: UIViewController {
 
-    
+    // Elements in the second ViewController
     @IBOutlet weak var flagImageView: UIImageView!
     @IBOutlet weak var stateImageView: UIImageView!
     @IBOutlet weak var stateNameLabel: UILabel!
     @IBOutlet weak var stateAreaLabel: UILabel!
     
+    // Second ViewController properties
     var flagImage = UIImage()
     var stateImage = UIImage()
     var stateName = ""
